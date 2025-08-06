@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Responsiva</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua a resolução do seu navegador</p>
+
+    <picture>
+        <source media="(min-width: 1200px)" srcset="imagens/studying-g.jpg" type="image/png">
+        <source media="(min-width: 768px)" srcset="imagens/studying-m.jpg" type="image/png">
+        <img src="imagens/studying.jpg" alt="Foto grande flexível">
+    </picture>
+
+    <h1>Reproduzindo aúdios</h1>
+    <p>Vamos aprender a reproduzir áudios</p>
+    <audio src="midia/circa.mp3" preload="metadata" controls loop></audio>
+</body>
+</html>

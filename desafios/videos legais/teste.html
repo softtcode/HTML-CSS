@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursos Online | Hardware</title>
+  <link rel="shortcut icon" href="icos/curso-icone.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      background-color: rgb(37, 37, 37);
+      font-family: sans-serif;
+      color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 90vw;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .link-curso {
+      margin: 20px 0;
+    }
+
+    .voltar {
+      margin-top: 20px;
+    }
+
+    .voltar img {
+      width: 50px;
+      filter: brightness(0.9);
+      transition: transform 0.3s;
+    }
+
+    .voltar img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Curso de Hardware</h1>
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/iT6E92Kt38o?si=OcR2F5JPkaum58wE"
+      title="YouTube video player"
+      allowfullscreen
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+  </div>
+
+  <div class="link-curso">
+    <a href="https://www.youtube.com/watch?v=iT6E92Kt38o&list=PLHz_AreHm4dn1JHgN9wpbIUhzZmycYQXW&ab_channel=CursoemV%C3%ADdeo" target="_blank" style="color: aliceblue;">
+      Ver curso completo no YouTube
+    </a>
+  </div>
+
+  <div class="voltar">
+    <a href="index.html">
+      <img src="imagens/seta.png" alt="Voltar à página inicial">
+    </a>
+  </div>
+
+</body>
+</html>

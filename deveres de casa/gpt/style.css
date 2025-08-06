@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*DESAFIO 1*/
+button {
+    background-color: red;
+    border: none;
+    padding: 1rem;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 1s ease, box-shadow 1s ease;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+button::before {
+    content: ' 👉 ';
+}
+
+button::after {
+    content: ' 👈 ';
+}
+/**/
+
+
+/*DESAFIO 2*/
+.item {
+    background-color: red;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+li {
+    margin: 1em;
+}
+
+li::marker {
+    content: '✓ ';
+}
+
+li:hover {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/**/
+
+
+/*DESAFIO 3*/
+.letter::first-letter {
+    font-size: 30px;
+    color: rgb(0, 167, 28);
+}
+
+.letter::first-line {
+    font-style: italic;
+}
+/**/
+
+
+/*DESAFIO 4*/
+.link-animado {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.link-animado::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    left: 0;
+    bottom: -4px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.link-animado:hover::after {
+    transform: scaleX(1);
+}
+
+/**/
+
+
+/*DESAFIO 5*/
+.card {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin: auto;
+    width: 130px;
+    transition: transform 0.8s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.8s ease;
+}
+
+.card:hover {
+    transform: scale(1.1,1.1);
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.card::before {
+    content: '✅ ';
+}
+/**/
+
+
+/*DESAFIO 6*/
+.select::selection {
+    background-color: red;
+    color: white;
+}

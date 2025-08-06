@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(37, 37, 37);
+        }
+
+        h1 {
+            color: aliceblue;
+            height: 10vh;
+        }
+
+        .container {
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            display: flex; 
+            background-color: rgb(37, 37, 37);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+            gap: 20px;
+        }
+
+        button {
+            background-color: #555;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #777; /* cor muda quando o mouse passa */
+            transform: scale(1.05); /* aumenta um pouco */
+        }
+
+        .anima:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+    </style>
+    <link rel="shortcut icon" href="icos/curso-icone.ico" type="image/x-icon">
+    <title>Cursos Online | Assista de graça!</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Cursos disponíveis</h1>
+
+        <section>
+            
+            <div class="grid">
+                <a class="anima" href="video-py.html"><img src="cursos/python.jpg" alt="Curso de Python"></a> <!--Curso de Python-->
+
+                <a class="anima" href="video-al.html"><img src="cursos/agoritmo.jpg" alt="Curso de Algoritmo"></a> <!--Curso de Algoritmo-->
+
+                <a class="anima" href="video-ia.html"><img src="cursos/IA.jpg" alt="Curso de Inteligência Artificial"></a> <!--Curso de IA-->
+
+                <a class="anima" href="video-hw.html"><img src="cursos/hardware.jpg" alt="Curso de Hardware"></a> <!--Curso de HardWare-->
+            </div>
+            <br><button onclick="window.location.href='teste.html'">Ver mais</button>
+        </section>
+    </div>
+</body>
+</html>
