@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centralização Vertical</title>
+    <style>
+        #container {
+            position: relative;
+            height: 96vh;
+            background-color: purple;
+            padding: 1rem;
+            background-image: url(https://img.freepik.com/vetores-gratis/alvo-preto-e-vermelho_78370-6507.jpg?semt=ais_hybrid&w=740);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+            
+        }
+
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body>
-    
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
