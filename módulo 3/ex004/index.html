@@ -12,7 +12,8 @@
         table {
             width: 500px;
             border-collapse: collapse;
-
+            width: 100%;
+           
         }
 
         td, th {
@@ -56,6 +57,14 @@
         tbody tr:nth-child(2n) {
             background-color: rgb(214, 214, 214);
         }
+
+        .conteiner {
+            max-width: 700px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
@@ -73,219 +82,182 @@
             TR, TD, TH
     -->
 
-    <table>
-        <caption>População das Unidades Federativas</caption>
-        <thead>
-            <th scope="col">Estado</th>
-            <th scope="col" style="width: 100px;">População</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">45.919.049</td>
-            </tr>
-
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">21.168.791</td>
-            </tr>
-
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.264.943</td>
-            </tr>
-
-            <tr>
-                <td>Bahia</td>
-                <td class="num">14 850 513	</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="num">845.731</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th scope="row">Total de habitantes</th>
-                <TD  id="total" class="num">85.198.514</TD>
-            </tr>
-        </tfoot>
-    </table>
+    <div class="conteiner">
+        <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 850 513	</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">845.731</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td scope="row">Total de habitantes</td>
+                    <td  id="total" class="num">85.198.514</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>

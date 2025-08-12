@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Vendas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 40rem;
+        }
+
+        tbody {
+            max-height: 700px;
+            overflow-y: auto;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 1em;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 0.5em;
+        }
+
+        tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        thead {
+            background-color: lightskyblue;
+            position: sticky;
+            top: -1px;
+        }
+
+        #maior {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <caption>Tabela de Vendas</caption>
+            <thead>
+                <th>Nome</th>
+                <th>Produto</th>
+                <th>QTD. Vendida</th>
+                <th>Receita Total</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Silva</td>
+                    <td>Smartphone XPTO</td>
+                    <td>45</td>
+                    <td>40.500,00</td>
+                </tr>
+                <tr id="maior">
+                    <td>Carlos Oliveira</td>
+                    <td>Notebook Light</td>
+                    <td>28</td>
+                    <td>50.400,00</td>
+                </tr>
+                <tr>
+                    <td>Mariana Santos</td>
+                    <td>Fone Bluetooth</td>
+                    <td>120</td>
+                    <td>24.000,00</td>
+                </tr>
+                <tr>
+                    <td>Pedro Costa</td>
+                    <td>Tablet Pro</td>
+                    <td>35</td>
+                    <td>31.500,00</td>
+                </tr>
+                <tr>
+                    <td>Juliana Lima</td>
+                    <td>Smartwatch Fit</td>
+                    <td>80</td>
+                    <td>32.000,00</td>
+                </tr>
+                <tr>
+                    <td>Rafael Pereira</td>
+                    <td>Monitor Gamer</td>
+                    <td>18</td>
+                    <td>21.600,00</td>
+                </tr>
+                <tr>
+                    <td>Fernanda Rocha</td>
+                    <td>Teclado Mecânico</td>
+                    <td>65</td>
+                    <td>9.750,00</td>
+                </tr>
+                <tr>
+                    <td>Lucas Almeida</td>
+                    <td>Mouse Sem Fio</td>
+                    <td>150</td>
+                    <td>7.500,00</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Nunes</td>
+                    <td>Caixa de Som</td>
+                    <td>42</td>
+                    <td>12.600,00</td>
+                </tr>
+                <tr>
+                    <td>Gustavo Henrique</td>
+                    <td>HD Externo 1TB</td>
+                    <td>56</td>
+                    <td>22.400,00</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+</body>
+</html>
