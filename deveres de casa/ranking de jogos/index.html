@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking dos Jogos 2025</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 1em;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        td:hover, th:hover {
+            background-color: rgb(226, 226, 226);
+            color: black;
+            cursor: pointer;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50vw;
+            margin: 1rem auto;
+        }
+
+        thead, tfoot {
+            background-color: rgb(48, 48, 48);
+            color: white;
+        }
+
+        tfoot td {
+            font-weight: bold;
+        }
+
+        #position {
+            background-color: lightyellow;
+        }
+
+        #note {
+            background-color: lightgreen;
+        }
+
+        .container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    💻 🎮 📱
+    -->
+
+    <h1>Tabela dos melhores jogos</h1>
+    <div class="container">
+        <table>
+            <colgroup>
+            <col id="position">
+            <col id="name">
+            <col id="platform">
+            <col id="note">
+            <col id="launched">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Plataforma</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Lançamento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1 🥇</th>
+                    <td> The Witcher 3: Wild Hunt</td>
+                    <td>💻 | 🎮</td>
+                    <td>10 / 10</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <th>2 🥈</th>
+                    <td>Red Dead Redemption 2</td>
+                    <td>💻 | 🎮</td>
+                    <td>10 / 10</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <th>3 🥉</th>
+                    <td>Elden Ring</td>
+                    <td>💻 | 🎮</td>
+                    <td>10 / 10</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>The Legend of Zelda: Breath of the Wild</td>
+                    <td>🎮</td>
+                    <td>10 / 10</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>God of War Ragnarök</td>
+                    <td>🎮</td>
+                    <td>9.8 / 10</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>Baldur’s Gate 3</td>
+                    <td>💻 | 🎮</td>
+                    <td>9.8 / 10</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <td>Cyberpunk 2077</td>
+                    <td>💻 | 🎮</td>
+                    <td>9.5 / 10</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td>Sekiro: Shadows Die Twice</td>
+                    <td>💻 | 🎮</td>
+                    <td>9.5</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <th>9</th>
+                    <td>Marvel’s Spider-Man 2</td>
+                    <td>🎮</td>
+                    <td>9.3</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <th>10</th>
+                    <td>Hollow Knight</td>
+                    <td>💻 | 🎮</td>
+                    <td>9.3</td>
+                    <td>2017</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2" scope="row">Total de Jogos</th>
+                    <td colspan="3">10</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
