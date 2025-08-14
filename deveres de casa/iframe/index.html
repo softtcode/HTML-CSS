@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .media_panel {
+            display: flex;
+            justify-content: center;
+        }
+
+        iframe.tela {
+            width: 500px;
+            height: 300px;
+        }
+
+        .position {
+            margin: 2em;
+        }
+
+        div h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="media_panel">
+
+        <!--SPOTIFY-->
+        <div class="position">
+            <h2>Escuta essa pedrada!</h2>
+            <iframe src="https://open.spotify.com/embed/track/62bVow99plhoF3VzEGfCr0?utm_source=generator" frameBorder="0">
+                <p>Seu navegador não é compatível com isso</p>
+            </iframe>
+        </div>
+
+        <!--YOUTUBE-->
+        <div class="position">
+            <h2>Veja esse vídeo legal!</h2>
+            <iframe class="tela" src="https://www.youtube.com/embed/gSPcrMcf1s4?si=jilKnoVfNF0g4ynQ" frameborder="0" loading="lazy" allowfullscreen>
+                <p>Seu navegador não é compatível com isso</p>
+            </iframe>
+        </div>
+
+        <!--GOOGLE MAPS-->
+        <div class="position">
+            <h2>Olha esse lugar!</h2>
+            <iframe class="tela" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58780.94378156667!2d-42.9686784!3d-22.957260799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1755202602399!5m2!1spt-BR!2sbr" frameborder="0" loading="lazy"></iframe>
+        </div>
+    </div>
+</body>
+</html>
