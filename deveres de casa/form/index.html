@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Six</title>
+    <style>
+        @font-face {
+            font-family: "cyberpunk";
+            src: url(fonts/CyberwayRiders-lg97d.ttf);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(180deg, rgb(99, 0, 99), rgb(0, 0, 128));
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header h1 {
+            font-size: 70px;
+            text-align: center;
+            margin-bottom: 0.50em;
+            font-family: cyberpunk;
+            color: rgb(233, 233, 0);
+        }
+
+        header h3 {
+            line-height: 1.7em;
+            text-align: center;
+        }
+
+        header a {
+            text-decoration: none;
+        }
+
+        header a:hover {
+            text-decoration: black underline;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        p {
+            margin: 0.5em;
+        }
+
+        input {
+            padding: 0.4em;
+            border-radius: 10px;
+        }
+
+        .card {
+            position: absolute;
+            background-color: white;
+            width: 75%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.479);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: linear-gradient(180deg, rgb(0, 0, 66), rgb(65, 0, 65));
+        }
+
+        .neon-text {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+        animation: pulsate 2s infinite alternate;
+        }
+
+        .conteudo {
+            padding: 1em;
+            color: white;
+        }
+
+        .form {
+            margin: 2em 0;
+            text-align: center;
+        }
+
+        .title {
+            margin: 1em auto;
+            text-align: center;
+            padding: 0.75em;
+            background-color: rgb(55, 0, 92);
+            width: 40%;
+            border-radius: 20px;
+        }
+
+        #destaque {
+            color: darkred;
+            text-shadow: 0.5px 0.5px 0.5px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="conteudo">
+            <header>
+                <h1 class="neon-text">The Six</h1>
+                <h3>Olá, candidato(a). Se você está lendo isso é porque se interessou em entrar para a ordem dos seis felinos, orgulhe-se dessa atitude. Esteja ciente que: Ao final desse formulário você terá concordado em ceder a sua vida para salvar todos os felinos de alma pura desse universo, portanto, torne-se um <a href="https://nerdtatuado.com.br/wp-content/uploads/2023/12/invencivel.jpg"><span id="destaque">Herói</span></a>.</h3>
+            </header>
+
+            <div class="form">
+                <h2 class="title">Informações iniciais</h2>
+                <form>
+                    <p>
+                        Digite o seu nome ou apelido: <input placeholder="Nome ou apelido..." name="nome" id="inome" type="text">
+                    </p>
+                    <p>
+                        Digite o seu melhor Email: <input placeholder="Melhor email..." name="email" id="iemail" type="email">
+                    </p>
+                    <p>
+                        Digite a sua idade: <input placeholder="Digite sua idade..." name="idade" id="iidade" type="number">
+                    </p>
+                </form>
+
+                <p>Escolha o seu Mestre</p>
+                <select name="deuses" id="deuses">
+                    <option value="obsidian">General Obsidian</option>
+                    <option value="">Lorde Gengibre</option>
+                    <option value="">Sir Pixelblade</option>
+                    <option value="">Chama Mística</option>
+                    <option value="">Lady Pinkwave</option>
+                    <option value="">Shinobi Ronronante</option>
+                </select>
+
+                <h2 class="title">Selecione sua classe</h2>
+                <ul>
+                    <li><input type="radio"> Guerreiro</li>
+                    <li><input type="radio"> Mago</li>
+                    <li><input type="radio"> Curandeiro</li>
+                    <li><input type="radio"> Assassino</li>
+                </ul>
+
+                <h2 class="title">Últimos passos</h2>
+                <p>Por que deveríamos te aceitar em nossa guilda?</p>
+                <textarea name="explain" id="explain"></textarea>
+
+                <p>
+                    <input type="checkbox"> Aceito seguir o código sagrado da guilda
+                </p>
+
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
