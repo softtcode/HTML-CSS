@@ -40,11 +40,12 @@ button {
     width: 150px;
     background-color: transparent;
     border: 1px solid gray;
-    padding: 0.30em;
+    padding: 0.50em;
 }
 
 button:hover {
     background-color: lightgray;
+    cursor: pointer;
 }
 
 label {
@@ -138,7 +139,11 @@ a {
     margin-top: 6rem;
 }
 
-@media (max-width: 960px) {
+#facebook button {
+    margin-bottom: 0.75em;
+}
+
+@media (max-width: 1000px) {
     .card {
         width: 90%;
     }
