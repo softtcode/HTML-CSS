@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form p {
+            margin: 1rem;
+        }
+
+        .card {
+            margin: 2rem auto;
+            width: 75vw;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+        }
+        .conteudo {
+            padding: 2rem;
+        }
+
+        .required::after {
+            content: ' *';
+            color: red;
+        }
+
+        #title {
+            text-align: center;
+        }
+
+        #idenuncia {
+            padding: 0.30em;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="conteudo">
+            <h1 id="title">Teste de Formulário</h1>
+
+            <form method="post">
+                <p>
+                    <label class="required" for="inome">Nome</label>
+                    <br><input type="text" name="nome" id="inome" required>
+                </p>
+                <p>
+                    <label for="isobrenome">Sobrenome</label>
+                    <br><input type="text" name="sobrenome" id="isobrenome">
+                </p>
+                <p>
+                    <label for="inumero">Telefone para contato</label>
+                    <br><input type="number" name="numero" id="inumero">
+                </p>
+                <p>
+                    <label class="required" for="iemail">Email para contato</label>
+                    <br><input type="email" name="email" id="iemail" required>
+                </p>
+                <p>
+                    <label class="required" for="idenuncia">Digite sua Denúncia</label>
+                    <br><textarea name="dununcia" id="idenuncia" rows="4" cols="30" required></textarea>
+                </p>
+
+                <hr>
+
+                <br><input type="submit" value="Enviar">
+                <input type="reset" value="Limpar Campos">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
