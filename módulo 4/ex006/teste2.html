@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulários</title>
+    <style>
+        .submit {
+            margin: 1rem;
+        }
+
+        fieldset {
+            width: 50vw;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="nome">Nome</label>
+                <input name="nome" id="nome" type="text">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email">
+            </p>
+            <p>
+                <label for="tel">Telefone</label>
+                <input name="tel" id="tel" type="number">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <p>
+                Indique seu sexo:
+                <div id="sexo">
+                    <br><input name="radio" id="masc" type="radio"> <label for="masc">Masculino</label>
+                    <input name="radio" id="fem" type="radio"> <label for="fem">Feminino</label>
+                </div>
+                <!--
+                Os inputs com radio têm o mesmo nome para que a seleção seja única.
+                -->
+            </p>
+        </fieldset>
+        <div class="submit">
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>
