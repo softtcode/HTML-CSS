@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Treino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="conteudo">
+            <h1 id="title">Cadastro</h1>
+
+            <form action="" method="post">
+                <div id="nome_sobrenome">
+                    <input class="borda" name="nome" id="nome" type="text" placeholder="Primeiro Nome" size="20">
+                    <input class="borda" name="sobrenome" id="sobrenome" type="text" placeholder="Sobrenome" size="20">
+                </div>
+
+                <div id="email">
+                    <input class="borda" name="email" id="email" type="email" placeholder="Email">
+                </div>
+
+                <div id="senha">
+                    <input class="borda" name="senha" id="senha" type="password" placeholder="••••••••">
+                </div>
+
+                <div id="data_nasc">
+                    <p>Selecione sua data de nascimento</p>
+                    <input name="data_nascimento" id="data_nascimento" type="date">
+                </div>
+
+                <div id="genero">
+                    <p>Selecione seu gênero</p>
+                    <p><input name="genero" id="genero_m" type="radio"> Masculino</p>
+                    <p><input name="genero" id="genero_f" type="radio"> Feminino</p>
+                    <p><input name="genero" id="genero_na" type="radio"> Prefiro não dizer</p>
+                </div>
+
+                <div>
+                    <p>Nos informe seus interesses</p>
+                    <p><input type="checkbox"> Programação</p>
+                    <p><input type="checkbox"> Design</p>
+                    <p><input type="checkbox"> Games</p>
+                    <p><input type="checkbox"> Música</p>
+                    <p><input type="checkbox"> Academia</p>
+                </div>
+
+                <div>
+                    <p>Escolha uma foto de perfil</p>
+                    <input name="file" id="file" type="file">
+                </div>
+                
+                <p>Selecione seu Estado</p>
+                <select name="cidade" id="cidade">
+                    <optgroup id="Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup id="Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="PE">Pernambuco</option>
+                    </optgroup>
+                </select>
+
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

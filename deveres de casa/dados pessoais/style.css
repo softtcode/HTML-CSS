@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor_letras: #5947db;
+    --fonte_letras: Cabin, sans-serif; 
+}
+
+body {
+    background-image: linear-gradient(90deg, #9B97DF, #87C6ED);
+    background-attachment: fixed;
+}
+
+form {
+    background-color: red;
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    margin: 2rem auto;
+    background-color: white;
+    width: 70vw;
+    max-width: 900px;
+    border-radius: 14px;
+}
+
+.conteudo {
+    padding: 1rem;
+    margin: auto;
+    font-family: var(--fonte_letras);
+    width: 80%;
+}
+
+.borda {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: rgba(151, 151, 151, 0.719);
+    padding: 0.5em;
+    outline: none;
+}
+
+#title {
+    color: var(--cor_letras);
+    font-family: var(--fonte_letras);
+    margin: 1rem;
+    text-justify: left;
+}
