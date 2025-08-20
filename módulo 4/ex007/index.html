@@ -10,15 +10,50 @@
 
     <form action="">
         <div>
-            <label for="prof">Profissão</label>
-            <input name="prof" id="prof" type="text" list="lib">
-            <datalist id="lib">
-                <option value="ADM">Administração</option>
-                <option value="DEV">Programador</option>
-                <option value="PM">Policial Militar</option>
-                <option value="ADV">Advogado</option>
-            </datalist>
+            <label for="in1">Número 1: </label>
+            <input name="n1" id="in1" type="number" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
         </div>
+
+        <div>
+            <label for="in2">Número 2: </label>
+            <input name="n2" id="in2" type="number" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div>
+
+        <div>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </div>
+
+        <div>
+            <label for="inum">Numero</label>
+            <input type="range" name="num" id="inum" min="0" max="10" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </div>
+
+        <div>
+            <label for="iano">Em que ano vc nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcidade()">
+        </div>
+
+        <div>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
+        </div>
+
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+
+        <script>
+            function calcidade() {
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
+        <script>
+            alert('Olá, mundo!')
+        </script>
     </form>
 </body>
 </html>
