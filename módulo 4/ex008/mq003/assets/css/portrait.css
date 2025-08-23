@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+body {
+    background-image: url(../images/burger-v.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    height: 100vh;
+}
