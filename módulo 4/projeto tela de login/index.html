@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <title>softtcode | Login</title>
 </head>
 <body>
     <main>
-        <section id="login">
-            <div id="imagem">
-                foto
-            </div>
+        <section class="container" id="login">
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem vindo(a) novamente. Faça login e acesse sua conta no seu ambiente.</p>
+                <p>Seja bem vindo(a) novamente. Faça login e acesse sua conta no seu ambiente de trabalho.</p>
 
                 <form method="post">
-                    
+                    <div id="div_nome">
+                        <label for="input_nome"><i class="fa-solid fa-user"></i></label>
+                        <input id="input_nome" type="text" placeholder="Email" required autocomplete="email">
+                    </div>
+                    <div id="div_sobrenome">
+                        <label for="input_senha"><i class="fa-solid fa-key"></i></label>
+                        <input id="input_senha" type="password" placeholder="Senha" required minlength="8">
+                    </div>
+
+                    <input id="submit" type="submit" value="Entrar">
+                    <button type="button">Esqueci a senha<i class="fa-solid fa-envelope"></i></button>
                 </form>
             </div>
         </section>
