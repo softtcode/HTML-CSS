@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --letras-fundo_destaque: rgb(104, 53, 29);
+    --letras: rgb(245, 245, 220);
+}
+
+body {
+    background-color: beige;
+}
+
+header {
+    background-color: rgb(104, 53, 29);
+    padding: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    font-family: Cabin, sans-serif;
+    color: var(--letras);
+}
+
+nav#nav_desktop ul li {
+    list-style: none;
+    margin: 0 0.75em;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--letras_destaque);
+    background-color: beige;
+    border-radius: 8px;
+    padding: .40em;
+    font-family: Cabin, sans-serif;
+    transition: all 0.2s ease;
+}
+
+.links:hover {
+    opacity: 90%;
+}
+
+.links_desktop_display {
+    display: inline;
+}
+
+.links_mobile_display {
+    display: block;
+    background-color: lightgray;
+    padding: 0.75rem;
+}
+
+.links_mobile_display:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.card {
+    background-color: white;
+    width: 60vw;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.411);
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.text {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: Roboto, sans-serif;
+    line-height: 1.4em;
+}
+
+.title {
+    font-family: Cabin, sans-serif;
+    color: var(--letras-fundo_destaque);
+    padding: 0.75rem;
+}
+
+#nav_mobile {
+    display: none;
+    text-align: center;
+}
+
+#nav_mobile li {
+    margin-bottom: 1px;
+}
+
+#nav_mobile a {
+    text-decoration: none;
+    color: black;
+    font-family: Cabin, sans-serif;
+}
+
+#nav_desktop {
+    display: none;
+}
+
+#burger {
+    background-color: rgb(82, 82, 82);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burger:hover {
+    background-color: white;
+    color: black;
+}

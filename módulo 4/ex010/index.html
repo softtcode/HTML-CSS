@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav id="nav_desktop">
+            <ul>
+                <li class="links_desktop_display"><a class="links" href="#">Sobre</a></li>
+                <li class="links_desktop_display"><a class="links"href="#">Em alta</a></li>
+                <li class="links_desktop_display"><a class="links" href="#">Blog</a></li>
+                <li class="links_desktop_display"><a class="links" href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <span id="burger" class="material-symbols-outlined" onclick="clickmenu()">menu</span>
+    <nav id="nav_mobile">
+        <ul>
+            <li class="links_mobile_display"><a class="links_mobile" href="#">Sobre</a></li>
+            <li class="links_mobile_display"><a class="links_mobile"href="#">Em alta</a></li>
+            <li class="links_mobile_display"><a class="links_mobile" href="#">Blog</a></li>
+            <li class="links_mobile_display"><a class="links_mobile" href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="card">
+        <div class="content">
+            <main>
+                <article>
+                    <h2 class="title">Testando Media Queries</h2>
+                    <hr>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores debitis cumque excepturi natus quos vel, architecto veniam alias nostrum ut in. Nihil sed ea expedita amet aperiam, tenetur consectetur ad!
+                        Itaque, corrupti nostrum similique sequi veniam neque deleniti doloribus nesciunt distinctio ipsa? Esse reiciendis deserunt iure ratione itaque error, voluptatem, odit doloremque neque ab inventore consequatur laudantium ea. Quis, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias reprehenderit, corrupti sit quidem qui repellat necessitatibus a neque, nulla non numquam culpa, natus quam? Optio eligendi deleniti corrupti dolores reiciendis.</p>
+                    </div>
+
+                    <h2 class="title">Testando Media Queries</h2>
+                    <hr>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores debitis cumque excepturi natus quos vel, architecto veniam alias nostrum ut in. Nihil sed ea expedita amet aperiam, tenetur consectetur ad!
+                        Itaque, corrupti nostrum similique sequi veniam neque deleniti doloribus nesciunt distinctio ipsa? Esse reiciendis deserunt iure ratione itaque error, voluptatem, odit doloremque neque ab inventore consequatur laudantium ea. Quis, culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ipsam dolorum commodi fugit ea cupiditate numquam quibusdam nostrum nihil! Cumque consectetur vel quis? Quis repudiandae labore atque nostrum! Esse, quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus maxime labore, perspiciatis natus error aut qui ipsam sed necessitatibus consequuntur sapiente voluptatem animi maiores sunt impedit? Suscipit, officia ratione? Itaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores tenetur eum similique! Atque vel maxime sint nostrum earum dolorem placeat vero recusandae facilis. Velit, illum maxime perspiciatis quis saepe quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente minima quae ad quasi veritatis similique ut. Quos officia a nisi tempore repellat voluptatem aliquid ratione praesentium, corrupti, officiis, aspernatur obcaecati!</p>
+                    </div>
+
+                    <h2 class="title">Testando Media Queries</h2>
+                    <hr>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores debitis cumque excepturi natus quos vel, architecto veniam alias nostrum ut in. Nihil sed ea expedita amet aperiam, tenetur consectetur ad!
+                        Itaque, corrupti nostrum similique sequi veniam neque deleniti doloribus nesciunt distinctio ipsa? Esse reiciendis deserunt iure ratione itaque error, voluptatem, odit doloremque neque ab inventore consequatur laudantium ea. Quis, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit adipisci ut eum quisquam reprehenderit odit reiciendis iste aut, tempora ratione dignissimos laudantium provident facere blanditiis esse sit labore perferendis beatae?</p>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        function clickmenu() {
+            if (nav_mobile.style.display == 'block') {
+                nav_mobile.style.display = 'none'
+            } else {
+                nav_mobile.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
