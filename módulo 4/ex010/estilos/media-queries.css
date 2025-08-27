@@ -1,2 +1,16 @@
 @charset "utf-8";
 
+@media screen and (max-width: 900px) {
+    .card {
+        width: 90vw;
+        transition: all 0.2s ease;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    #nav_desktop {
+        display: none;
+    }
+}

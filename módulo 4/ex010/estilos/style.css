@@ -102,12 +102,12 @@ nav#nav_desktop ul li {
 }
 
 #nav_desktop {
-    display: none;
+    display: block;
 }
 
 #burger {
+    display: none;
     background-color: rgb(82, 82, 82);
-    display: block;
     color: white;
     text-align: center;
     padding: 10px;

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu Site</h1>
         <nav id="nav_desktop">
@@ -61,6 +61,14 @@
     </div>
 
     <script>
+        function mudoutamanho() {
+            if (window.innerwidth >= 900) {
+                nav_mobile.style.display = 'block'
+            } else {
+                nav_mobile.style.display = 'none'
+            }
+        }
+
         function clickmenu() {
             if (nav_mobile.style.display == 'block') {
                 nav_mobile.style.display = 'none'
