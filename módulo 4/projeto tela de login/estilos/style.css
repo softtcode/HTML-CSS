@@ -32,7 +32,6 @@ form label i {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     background-image: url(../images/pintura.jpg);
     background-size: contain;
@@ -44,6 +43,8 @@ form label i {
     max-width: 800px;
     border-radius: 20px;
     overflow: hidden;
+
+    transform: translate(-50%, -50%);
 }
 
 #formulario {
