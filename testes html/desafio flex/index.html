@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(45deg, rgb(61, 21, 105), rgb(145, 85, 168));
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: Cabin, Helvetica, sans-serif;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 1em;
+        }
+
+        .centro {
+            width: 100vw;
+            height: 100vh;
+            padding: 1rem;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+        }
+
+        .card {
+            width: 270px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 1em;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.438);
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.438);
+        }
+
+        .preco {
+            margin-bottom: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .preco::before {
+            content: 'R$ ';
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            background-image: linear-gradient(45deg, rgb(168, 11, 182), rgb(102, 57, 121));
+            color: white;
+            padding: 1em;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Cabin, sans-serif;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.384);
+        }
+
+        #prato1 img#prato1_imagem, #prato2 img#prato2_imagem, #prato3 img#prato3_imagem {
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
+        }
+
+        #prato1 {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="centro">
+        <div id="prato1" class="card">
+            <img id="prato1_imagem" src="https://irp.cdn-website.com/e11124be/dms3rep/multi/Sob%C3%A1.png" alt="">
+
+            <h1>Prato 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <h2 class="preco">27,90</h2>
+
+            <a class="btn" href="#">Pedir agora</a>
+        </div>
+        <div id="prato2" class="card">
+            <img id="prato2_imagem" src="https://i.pinimg.com/originals/18/dd/99/18dd9971dbf35015e0779913ad2241b0.png" alt="">
+
+            <h1>Prato 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <h2 class="preco">21,90</h2>
+
+            <a class="btn" href="#">Pedir agora</a>
+        </div>
+        <div id="prato3" class="card">
+            <img id="prato3_imagem" src="https://www.alsultan.com.br/wp-content/uploads/2018/12/pratos-combinados.png" alt="">
+
+            <h1>Prato 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <h2 class="preco">24,89</h2>
+
+            <a class="btn" href="#">Pedir agora</a>
+        </div>
+    </div>
+</body>
+</html>
