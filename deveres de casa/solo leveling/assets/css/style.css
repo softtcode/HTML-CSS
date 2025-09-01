@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --roxo_vibrante: #5B2C83;
+    --azul_neon: #00AEEF;
+    --roxo_escuro: #3F1C65;
+}
+
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    padding: 1em;
+    height: 5rem;
+}
+
+header ul {
+    margin-top: 1em;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 2em;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Cabin, sans-serif;
+    background-color: transparent;
+    padding: 0.75em;
+    border-radius: 16px;
+
+    transition: all 0.2s ease;
+}
+
+header ul li a:hover {
+    background-color: var(--azul_neon);
+    box-shadow: 0px 0px 10px #00afef73;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+}
+
+.center {
+    width: 100%;
+    height: calc(100vh - 5rem);
+
+    display: flex;
+    align-items: center;
+}
+
+.sombra {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.616));
+}
+
+#imagem_inicio {
+    width: 100%;
+
+    background-image: url(../images/jinwoo_init.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#init_block {
+    width: 50%;
+    font-size: 25px;
+    padding: 1em;
+    font-family: Cabin, sans-serif;
+}
+
+#init_block a {
+    display: inline-block;
+
+    color: white;
+    background-color: var(--roxo_escuro);
+    padding: .75em;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0px 3px 0px #00afef;
+
+    transition: all 0.2s ease;
+}
+
+#init_block a:hover {
+    box-shadow: 0px 0px 12px 1px #00afef67;
+    transform: scale(1.05, 1.05);
+}
+
+#init_block h1 {
+    color: white;
+    margin-bottom: .5em;
+}
+
+#init_block p {
+    color: white;
+    margin-bottom: 1em;
+}
