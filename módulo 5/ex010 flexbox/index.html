@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Grow e Shrink</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      padding: 1em;
+      background-color: #222;
+      color: white;
+    }
+
+    .logo {
+      flex-shrink: 0; /* nunca encolhe */
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .links {
+      display: flex;
+      gap: 1em;
+      flex-grow: 1; /* ocupa todo o espaço extra */
+      justify-content: center;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: white;
+      padding: .5em;
+      transition: 0.2s;
+    }
+
+    .links a:hover {
+      background: #444;
+      border-radius: 8px;
+    }
+
+    .search {
+      flex-shrink: 2; /* este encolhe mais rápido que o logo */
+      background: #333;
+      padding: .5em 1em;
+      border-radius: 20px;
+      min-width: 100px;
+    }
+
+    .search input {
+      border: none;
+      background: transparent;
+      color: white;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">LOGO</div>
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">Sobre</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Buscar...">
+    </div>
+  </nav>
+</body>
+</html>

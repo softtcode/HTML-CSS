@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+.principal {
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    padding: 1em 2em;
+    font-family: Cabin, sans-serif;
+}
+
+.cards_resume-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_resume {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    margin-top: 1.5em;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.26);
+    flex-shrink: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease;
+    transition-delay: 0.1s;
+}
+
+.card_resume:hover {
+    transform: translateY(-10px);
+}
+
+.card_resume h3 {
+    position: relative;
+    margin: 0.2em;
+    color: rgb(141, 140, 140);
+    cursor: default;
+}
+
+.valor_resume {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.valor_resume p#ganho::before {
+    content: '$ ';
+}
+
+.valor_resume p {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 70px;
+    cursor: default;
+}
+
+.resume_icons {
+    color: white;
+    background-color: rgb(112, 97, 255);
+    padding: 1.5em;
+    border-radius: 32% 68% 19% 81% / 61% 65% 35% 39%  ;
+
+    position: absolute;
+    right: -8%;
+    top: -60%;
+}

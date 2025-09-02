@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center-flex {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: rgb(112, 97, 255);
+    height: 100%;
+    padding: 1em;
+
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+.perfil {
+    text-align: center;
+    font-family: Cabin, sans-serif;
+}
+
+.perfil h1 {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.perfil p {
+    color: rgb(201, 201, 201);
+}
+
+.card_foto_perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 1.5em;
+    background-color: rgb(203, 191, 255);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.39);
+}
+
+.card_foto_perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list_links {
+    flex-grow: 1;
+    
+    list-style: none;
+    padding: 1.75em;
+    width: 80%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.list_links li {
+    padding-left: 1em;
+}
+
+.list_links li a {
+    font-size: 1.4em;
+    font-family: Cabin, sans-serif;
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+
+    background-color: transparent;
+    padding: 0.5em;
+    border-radius: 15px;
+
+    transition: all 0.2s ease;
+}
+
+.list_links li a:hover {
+    background-color: rgb(203, 191, 255);
+    color: rgb(112, 97, 255);
+}
+
+.link {
+    position: relative;
+}
+
+.link i {
+    position: absolute;
+    top: 14%;
+    left: -15%;
+
+    color: white;
+    font-size: 18px;
+}
