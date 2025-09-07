@@ -1,0 +1,79 @@
+@charset "utf-8";
+@font-face {
+    font-family: Flame;
+    src: url(../fonts/FlameRegular.otf) format('opentype');
+}
+
+:root {
+    --cor_fundo: #F5EBDC;
+    --cor_letra: #502314;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-general {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    background-color: var(--cor_fundo);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.281);
+}
+
+.nav-logo {
+    width: 100px;
+}
+
+.nav-logo img {
+    width: 100%;
+}
+
+.nav-items {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-options {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-options a {
+    color: var(--cor_letra);
+    text-decoration: none;
+    font-family: Flame, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 0.75em;
+    transition: all 0.5s ease
+}
+
+.nav-options a:hover {
+    background-color: var(--cor_letra);
+    color: var(--cor_fundo);
+}
+
+.nav-cart a {
+    font-size: 22px;
+    color: var(--cor_fundo);
+    background-color: var(--cor_letra);
+    border-radius: 50%;
+    padding: 1em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.nav-cart a:hover {
+    color: var(--cor_letra);
+    background-color: var(--cor_fundo);
+    transform: scale(1.05);
+}
