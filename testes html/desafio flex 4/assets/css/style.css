@@ -43,6 +43,7 @@ main {
 .content-text h2 {
     margin-top: 0.75rem;
     margin-bottom: 1rem;
+    line-height: 30px;
 }
 
 .card {
