@@ -1,0 +1,119 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(64deg, rgb(196, 0, 29), rgb(52, 0, 68));
+    background-attachment: fixed;
+    overflow-x: hidden;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.content-img {
+    width: 100%;
+    height: 300px;
+}
+
+.content-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content-text {
+    font-family: Cabin, sans-serif;
+    line-height: 22px;
+}
+
+.content-text h2 {
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: 500px;
+    background-color: white;
+    padding: 1em;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+}
+
+.card-content {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.price {
+    background-color: #6aff8c;
+    border-radius: 20px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 36px;
+}
+
+.price::before {
+    content: 'R$ ';
+}
+
+.selo {
+    position: absolute;
+    color: white;
+    font-variant: small-caps;
+    font-family: Roboto, sans-serif;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    font-size: 20px;
+    background-color: rgb(184, 0, 190);
+    right: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.336);
+    border-radius: 10px 0 0 10px;
+}
+
+.buy-btn {
+    font-size: 25px;
+    background-color: red;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.342);
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: rgb(172, 0, 0);
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .card {
+        width: 98%;
+    }
+}
