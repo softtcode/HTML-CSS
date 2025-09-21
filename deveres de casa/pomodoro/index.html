@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <style>
+        @charset "utf-8";
+        @font-face {
+            font-family: 'louisv';
+            src: url(fonts/Intrepid.ttf) format('truetype');
+            font-style: normal;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(224, 209, 168);
+            letter-spacing: .2rem;
+        }
+
+        .flex-center {
+            height: 100dvh;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timer {
+            border: 3px solid white;
+            color: white;
+            font-family: louisv, sans-serif;
+            font-style: normal;
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s ease;
+        }
+
+        .timer:hover {
+            transform: scale(1.02);
+        }
+
+        .timer-btns {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            height: 100px;
+        }
+
+        .timer-btns button {
+            font-family: louisv, sans-serif;
+            letter-spacing: .120rem;
+            width: 100px;
+            height: 50px;
+            padding: .75rem;
+            font-size: 20px;
+            color: rgb(235, 219, 175);
+            background-color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        .timer-btns button:hover {
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.158);
+            color: rgb(158, 148, 119);
+            transform: translateY(-8px);
+        }
+
+        .timer-btns button:focus {
+            color: white;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+
+        .timer-btns button:active {
+            color: grey;
+            background-color: rgb(235, 235, 235);
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-center">
+        <div class="timer">
+            <h1>Pomodoro</h1>
+        </div>
+        <div class="timer-btns">
+            <button>Start</button>
+            <button>Pause</button>
+            <button>Reset</button>
+        </div>
+    </div>
+</body>
+</html>

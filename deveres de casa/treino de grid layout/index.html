@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100dvh;
+        }
+
+        header {
+            background-color: lightblue;
+            height: 100%;
+        }
+
+        nav {
+            background-color: lightcoral;
+        }
+
+        main {
+            background-color: lightgreen;
+        }
+
+        footer {
+            background-color: violet;
+            height: 100%;
+        }
+
+        .grid-container {
+            height: 100%;
+            display: grid;
+            grid-template-rows: 80px 1fr 60px;
+        }
+
+        .grid-item2 {
+            display: grid;
+            grid-template: 1fr / 20% 1fr;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">
+            <header class="center"><h1>Header</h1></header>
+        </div>
+        <div class="grid-item2">
+            <nav class="center"><h1>Nav</h1></nav>
+            <main class="center"><h1>Main</h1></main>
+        </div>
+        <div class="grid-item3">
+            <footer class="center"><h1>Footer</h1></footer>
+        </div>
+    </div>
+</body>
+</html>
