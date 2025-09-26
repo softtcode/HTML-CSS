@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100dvh;
+        }
+
+        header {
+            background-color: lightcoral;
+        }
+
+        nav {
+            background-color: lightgreen;
+        }
+
+        main {
+            background-color: lightcyan;
+        }
+
+        aside {
+            background-color: lightpink;
+        }
+
+        footer {
+            background-color: lightsalmon;
+        }
+
+        .height {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container {
+            height: 100%;
+            display: grid;
+            grid-template: 10% 5% 80% 5% / 1fr;
+        }
+
+        .grid-item3 {
+            display: grid;
+            grid-template: 1fr / 80% 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">
+            <header class="height"><h1>Header</h1></header>
+        </div>
+        <div class="grid-item2">
+            <nav class="height"><h1>Nav</h1></nav>
+        </div>
+        <div class="grid-item3">
+            <main class="height"><h1>Main</h1></main>
+            <aside class="height"><h1>Aside</h1></aside>
+        </div>
+        <div class="grid-item4">
+            <footer class="height"><h1>Footer</h1></footer>
+        </div>
+    </div>
+</body>
+</html>
